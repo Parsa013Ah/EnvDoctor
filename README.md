@@ -1,5 +1,7 @@
 <div align="center">
 
+![envdoctor demo](assets/demo.gif)
+
 # 🩺 envdoctor
 
 **Your `.env` has problems. Find them in one second.**
