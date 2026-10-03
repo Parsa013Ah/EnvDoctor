@@ -1,0 +1,9 @@
+node_modules
+npm-cache
+.env
+.env.*
+!.env.example
+!examples/demo/.env
+!examples/demo/.env.example
+*.log
+.DS_Store

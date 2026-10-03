@@ -1,0 +1,14 @@
+{
+  "name": "envdoctor",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI that finds missing, unused and leaked environment variables — and fixes your .env.example for you.",
+  "bin": { "envdoctor": "bin/envdoctor.js" },
+  "main": "src/core.js",
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "keywords": ["env", "dotenv", "environment-variables", "cli", "devtools", "security", "secrets", "lint", "env-example", "ci"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Parsa013Ah/EnvDoctor.git" },
+  "homepage": "https://github.com/Parsa013Ah/EnvDoctor#readme"
+}
