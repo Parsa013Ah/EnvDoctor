@@ -1,5 +1,5 @@
 {
-  "name": "envdoctor",
+  "name": "@parsa013ah/envdoctor",
   "version": "1.0.0",
   "description": "Zero-dependency CLI that finds missing, unused and leaked environment variables — and fixes your .env.example for you.",
   "bin": { "envdoctor": "bin/envdoctor.js" },

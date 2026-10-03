@@ -9,14 +9,14 @@
 Zero dependencies · Node 18+ · JS/TS, Python, Go, Ruby, PHP, Java, Rust, C#
 
 [![CI](https://github.com/Parsa013Ah/EnvDoctor/actions/workflows/ci.yml/badge.svg)](https://github.com/Parsa013Ah/EnvDoctor/actions)
-[![npm](https://img.shields.io/npm/v/envdoctor)](https://www.npmjs.com/package/envdoctor)
+[![npm](https://img.shields.io/npm/v/@parsa013ah/envdoctor)](https://www.npmjs.com/package/@parsa013ah/envdoctor)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![deps](https://img.shields.io/badge/dependencies-0-brightgreen)
 
 </div>
 
 ```bash
-npx envdoctor
+npx @parsa013ah/envdoctor
 ```
 
 No config. No install. It reads your code, your `.env` and your `.env.example`, and tells you what's wrong:
@@ -41,7 +41,7 @@ envdoctor v1.0.0  scanned 2 files, found 7 variables in code
 Then fix the boring part automatically:
 
 ```bash
-npx envdoctor --fix     # creates or updates .env.example from your real code
+npx @parsa013ah/envdoctor --fix     # creates or updates .env.example from your real code
 ```
 
 ## Why
@@ -85,19 +85,19 @@ Exit code is `1` when there are errors (or warnings with `--strict`), so it drop
 ### GitHub Actions
 
 ```yaml
-- run: npx envdoctor --strict --env .env.example
+- run: npx @parsa013ah/envdoctor --strict --env .env.example
 ```
 
 ### Pre-commit hook
 
 ```bash
-echo 'npx envdoctor' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+echo 'npx @parsa013ah/envdoctor' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
 ### As a library
 
 ```js
-const { analyze } = require('envdoctor');
+const { analyze } = require('@parsa013ah/envdoctor');
 const { issues, score } = analyze({ dir: '.' });
 ```
 
